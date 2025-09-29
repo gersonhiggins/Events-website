@@ -1,0 +1,9 @@
+.image-parallax {
+    background-image: url('../../assets/1000087898.jpg');
+    background-color: aqua;
+    height: 100vh;        /* importante: dar altura */
+}
+
+.body {
+    color: violet;
+}
