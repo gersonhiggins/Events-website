@@ -1,0 +1,63 @@
+.content-box {
+    top: 50px;
+}
+
+.optional-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.optional-items li, .budget ul li {
+    list-style: none;
+    width: max-content;
+    padding: 10px;
+    background-color: #b06e04cb;
+    color: white;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.makiladilla {
+    margin: 20px 0 0 20px;
+}
+
+.makiladilla:first-child {
+    margin-left: 35px;
+}
+
+.optional-items li.checked-item,
+.budget ul li.checked-item {
+  background-color: rgb(67, 31, 5);
+  color: white;
+}
+
+.optional-items li:hover, .budget ul li:hover {
+    box-shadow: 0 0 4px 4px rgb(127, 127, 62);
+}
+
+.makiladilla input, .makiladilla label {
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+input[type="checkbox"]  {
+   display: none;
+}
+
+.makiladilla p {
+    padding-left: 15px;
+}
+
+tr td:first-child, tr th:first-child {
+    padding: 0 20px;
+}
+table {
+    width: 100%;
+}
+
+@media (max-width:700px)  {
+    tr td:first-child, tr th:first-child {
+    padding: 0 10px;
+}
+}

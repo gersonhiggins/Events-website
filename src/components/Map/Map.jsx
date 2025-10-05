@@ -8,8 +8,8 @@ const containerStyle = {
 }
 
 const center = {
-  lat: -34.397,
-  lng: 150.644
+  lat: 10.36102085024606,
+  lng: -66.89944140695225
 }
 
 export default function MapComponent({ lat = center.lat, lng = center.lng }){

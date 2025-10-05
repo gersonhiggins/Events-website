@@ -1,0 +1,71 @@
+.app-loader {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 9999
+}
+
+.loader-box {
+    background: #fff;
+    max-width: 420px;
+    width: 88%;
+    padding: 22px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px
+}
+
+.charging-logo {
+  width: 30vh;
+  height: 20vh;
+    background: linear-gradient(90deg, #ff9c2b, #ade61d, #0ed025);
+  -webkit-mask-image: url('../../assets/logo.png');
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url('../../assets/logo.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: transparent;
+    /* make gradient animate smoothly */
+    background-size: 300% 300%;
+    animation: gradientShift 3s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg)
+    }
+}   
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.loader-text {
+    font-weight: 600;
+    color: #222
+}
+
+.progress {
+    width: 100%;
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 99px;
+    overflow: hidden
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #ff6b6b, #ff9a6b);
+    width: 0%;
+    transition: width .3s ease
+}

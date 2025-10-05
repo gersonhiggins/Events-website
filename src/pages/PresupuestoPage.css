@@ -1,0 +1,17 @@
+.bg_color {
+    position: fixed;
+    z-index: -20;
+    background: white;
+    width: 100vh;
+    height: 100%;
+}
+.parallax h1 {
+    margin-top: 50px;
+    color: #784b03;
+    font-weight: 900;
+;
+}
+
+.parallax {
+    padding: 10px;  
+}

@@ -1,21 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Matangi:wght@300..900&display=swap');
 
-
-nav {
-  font-family: 'matangi', 'san-serif';
-}
 
 .site-nav {
-  background-color: #ad87348f;
+  background: var(--color-gradient);
   backdrop-filter: blur(5px);
   color: #ffffff;
   padding: 10px 16px;
   width: calc(100% - 32px);
   position: fixed;
   top: 0;
-  z-index: 50;
-  
+  z-index: 2;
   transition: transform 280ms ease, opacity 280ms ease;
+  
 }
 
 .site-nav.nav-hidden{ transform: translateY(-110%); opacity: 0; }
@@ -25,7 +20,7 @@ nav {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .brand {
@@ -68,20 +63,30 @@ nav {
   }
 
   .nav-links {
-    position: absolute;
-    right: 16px;
-    top: 56px;
-    background-color: #ad87348f;
-    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    background: linear-gradient(90deg, #aa860e, #b13e09);
     flex-direction: column;
     padding: 12px;
-    border-radius: 8px;
-    display: none;
-    min-width: 160px
-  }
+    width: calc(100% - 24px);
+    height: calc(100vh - 74px);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: left 0.5s ease; /* Animate only left */
+    display: flex; /* Always flex, no display toggle */
+  } 
 
   .nav-links.open {
-    display: flex
+    left: 0;
+  }
+
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
+  .nav-links.open {
+    display: flex;
   }
 
   .nav-inner {
