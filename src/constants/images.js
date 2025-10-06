@@ -7,8 +7,12 @@ import bg6 from '../assets/luces.jpg'
 import logo from '../assets/logo.png'
 import prep from '../assets/prep.jpg'
 
+
+
 const images = {
     bg1, bg2, bg3, bg4, bg5, logo, bg6, prep
 }
 
-export default images
+
+
+export default  images

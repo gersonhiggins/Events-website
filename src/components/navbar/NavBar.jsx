@@ -30,7 +30,7 @@ export default function NavBar() {
         <button className="hamburger" onClick={() => setOpen(o => !o)} aria-label="Toggle menu">{open ? '✕' : '☰'}</button>
         <ul className={`${open ? 'nav-links open' : 'nav-links'}`}>
           <li><a href="/events-website" onClick={() => setOpen(false)}>Inicio</a></li>
-          <li><a href="/events-website#galeria" onClick={() => setOpen(false)}>Galería</a></li>
+          <li><a href="/events-website/galeria" onClick={() => setOpen(false)}>Galería</a></li>
           <li><a href="/events-website#contacto" onClick={() => setOpen(false)}>Contacto</a></li>
           <li><Link to="/events-website/presupuesto" onClick={() => setOpen(false)}>Presupuesto</Link></li>
         </ul>

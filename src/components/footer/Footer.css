@@ -72,4 +72,14 @@ p, a {
     .col {
         justify-content: center;
     }
+
+        .row {
+        width: 80%;
+    }
+}
+
+@media (max-width:500px) {
+        .row {
+        width: 95%;
+    }
 }

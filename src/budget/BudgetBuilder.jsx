@@ -137,7 +137,7 @@ export default function BudgetBuilder() {
         />
       </div>
 
-      <button onClick={resetBudget} style={{ margin: "10px 35px", padding: "5px 10px" }}>
+      <button className="reset_btn" onClick={resetBudget}>
         Resetear Presupuesto
       </button>
 
@@ -195,31 +195,14 @@ export default function BudgetBuilder() {
         <button
           onClick={handleGeneratePDF}
           disabled={generating}
-          style={{
-            textDecoration: "none",
-            padding: "5px 10px",
-            color: "#fff",
-            backgroundColor: "#007bff",
-            borderRadius: "4px",
-            marginTop: "10px"
-          }}
+          className='generate_btn'
         >
           {generating ? "Generando PDF..." : "Generar PDF"}
         </button>
       )}
 
       {pdfBlob && (
-        <button
-          onClick={handleDownloadPDF}
-          style={{
-            textDecoration: "none",
-            padding: "5px 10px",
-            color: "#fff",
-            backgroundColor: "#28a745",
-            borderRadius: "4px",
-            marginTop: "10px"
-          }}
-        >
+        <button className='download_btn' onClick={handleDownloadPDF}>
           Descargar PDF
         </button>
       )}

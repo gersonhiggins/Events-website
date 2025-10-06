@@ -18,6 +18,10 @@
     transition: 0.4s;
 }
 
+.optional-items li label {
+    padding: 10px;
+}
+
 .makiladilla {
     margin: 20px 0 0 20px;
 }
@@ -54,6 +58,51 @@ tr td:first-child, tr th:first-child {
 }
 table {
     width: 100%;
+}
+
+.reset_btn {
+    padding: 10px;
+    background-color: rgb(179, 54, 54);
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: var(--font-family);
+}
+
+.reset_btn:hover {
+    background-color: rgb(94, 7, 7);
+}
+
+.download_btn {
+        padding: 10px;
+    background-color: rgb(25, 198, 97);
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: var(--font-family);
+}
+
+.download_btn:hover {
+    background-color: rgb(5, 71, 35);
+}
+
+.generate_btn {
+            padding: 10px;
+    background-color: rgb(54, 179, 164);
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: var(--font-family);
+}
+
+.generate_btn:hover {
+    background-color: rgb(7, 115, 99);
 }
 
 @media (max-width:700px)  {

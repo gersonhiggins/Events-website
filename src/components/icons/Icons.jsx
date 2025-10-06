@@ -12,7 +12,7 @@ useEffect(() => {
     const scrollTop = window.scrollY;
     const windowHeight = window.innerHeight;
     const docHeight = document.documentElement.scrollHeight;
-    const threshold = 100; // tolerancia de 5px
+    const threshold = 5; // tolerancia de 5px
 
     if (scrollTop <= threshold) {
       setScrollPosition("top");

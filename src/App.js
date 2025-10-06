@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Footer from './components/footer/Footer';
 import Icons from './components/icons/Icons';
 import PresupuestoPage from './pages/PresupuestoPage'
-import BudgetPDFPage from './budget/BudgetPDFPage';
+import Gallery from './components/gallery/Gallery';
 import Body from './components/body/Body'
 import images from './constants/images'
 import { useEffect, useState } from 'react'
@@ -54,7 +54,7 @@ function App() {
         <Routes>
           <Route path="/events-website" element={<Body />} />
           <Route path="/events-website/presupuesto" element={<PresupuestoPage />} />
-          <Route path="/events-website/preview-pdf" element={<BudgetPDFPage />} />
+          <Route path="/events-website/galeria" element={<Gallery />} />
         </Routes>
         <Footer />
       </div>
