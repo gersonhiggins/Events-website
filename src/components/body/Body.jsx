@@ -37,10 +37,10 @@ export default function Body() {
           <div className="slide-overlay">
             <img src={images.logo} className='logo' alt="Eventos Inolvidables" />
             <h1 data-animate-on-view data-animation="fade-left" data-delay="150ms">Eventos inolvidables hechos a tu medida</h1>
-            <p data-animate-on-view data-animation="fade-left" data-delay="250ms">Diseñamos y coordinamos bodas, cumpleaños y eventos corporativos con atención en cada detalle para que tú solo disfrutes.</p>
-            <div className="hero-ctas" data-animate-on-view data-animation="fade-up" data-delay="350ms">
-              <Link to="/events-website/presupuesto" className="btn primary">Calcular presupuesto</Link>
-              <a href="/events-website#contacto" className="btn ghost">Contactar</a>
+            <p data-animate-on-view data-animation="fade-left" data-delay="250ms">Producimos y ejecutamos bodas, cumpleaños y eventos corporativos, todo incluido con atención en cada detalle.</p>
+            <div className="hero-ctas" data-animate-on-view data-animation="fade-up" data-delay="350ms">  
+              <Link to="  /presupuesto" className="btn primary">Calcular presupuesto</Link>
+              <a href="/#contacto" className="btn ghost">Contactar</a>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Body() {
               <div className="feature"><p>🎶 Sonido e iluminación profesional</p></div>
               <div className="feature"><p>🎀 Decoración personalizada</p></div>
             </div>
-            <Link to="/events-website/presupuesto" className="btn primary small">Solicitar presupuesto</Link>
+            <Link to="/galeria" className="btn primary small">Ver Galeria</Link>
           </div>
         </div>
       </section>
