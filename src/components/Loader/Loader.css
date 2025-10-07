@@ -23,7 +23,7 @@
 .charging-logo {
   width: 30vh;
   height: 20vh;
-    background: linear-gradient(90deg, #ff9c2b, #ade61d, #0ed025);
+    background: linear-gradient(90deg, #fffb2b, #c78a07b5, #2b1f03);
   -webkit-mask-image: url('../../assets/logo.png');
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
