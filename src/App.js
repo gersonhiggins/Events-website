@@ -52,9 +52,9 @@ function App() {
         <NavBar />
         <Icons />
         <Routes>
-          <Route path="/events-website" element={<Body />} />
-          <Route path="/events-website/presupuesto" element={<PresupuestoPage />} />
-          <Route path="/events-website/galeria" element={<Gallery />} />
+          <Route path="/" element={<Body />} />
+          <Route path="/presupuesto" element={<PresupuestoPage />} />
+          <Route path="/galeria" element={<Gallery />} />
         </Routes>
         <Footer />
       </div>
