@@ -22,6 +22,7 @@ export default function Gallery() {
             src={img}
             alt={`Gallery ${i}`}
             className="gallery-img"
+            loading="lazy"
             onClick={() => {
               setPhotoIndex(i);
               setIsOpen(true);
