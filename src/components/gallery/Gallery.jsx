@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css"; // ✅ Required for styling
+import "yet-another-react-lightbox/styles.css";
 import "./Gallery.css";
 import gallery_img from "../../constants/galleryimages";
 
