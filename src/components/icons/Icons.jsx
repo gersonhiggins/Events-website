@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { SlSocialInstagram } from "react-icons/sl";
 import { FaFacebookSquare, FaWhatsappSquare } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
+import { FaTiktok } from "react-icons/fa";
 import './Icons.css'
 
 export default function Icons() {
@@ -34,6 +35,7 @@ useEffect(() => {
       <a href="https://www.facebook.com/casagrandevento" ><FaFacebookSquare /></a>
       <a href="https://wa.me/+584143025558/" ><FaWhatsappSquare /></a>
       <a href="https://mailto.higgins21alexandra@gmail.com" ><BiLogoGmail /></a>
+      <a href="https://www.tiktok.com/@casagrandeventos1"><FaTiktok /></a>
     </div>
   );
 }
